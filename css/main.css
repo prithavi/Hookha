@@ -1,0 +1,473 @@
+
+.full-top-logo:after {
+    content: "";
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    background: url(hookha/header_af.png) no-repeat center center;
+    width: 100px;
+    height: 95px;
+    position: absolute;
+    top: 319px;
+    left: 50%;
+    margin-left: -50px;
+    cursor: inherit;
+}
+.social2 ul{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: 0;
+padding: 0;
+
+display:flex;
+
+
+}
+.social2 ul li{
+list-style: none;
+margin: 0 40px;
+justify-content: center;
+
+}
+.social2 ul li .fa{
+font-size: 40px;
+color: #262626;
+line-height: 80px;
+transition: .5s;
+
+}
+.social2 ul li a{
+position: relative;
+display: block;
+width: 80px;
+height: 80px;
+background-color: #fff;
+text-align: center;
+transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0,0);
+transition: .5s;
+box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+}
+.social2 ul li a::before{
+content: "";
+position: absolute;
+top: 10px;
+left: -20px;
+height: 100%;
+width: 20px;
+background: #b1b1b1;
+transition: .5s;
+transform: rotate(0deg) skewY(-45deg);
+}
+.social2 ul li a::after{
+content: "";
+position: absolute;
+top: 80px;
+left: -11px;
+height: 20px;
+width: 100%;
+background: #b1b1b1;
+transition: .5s;
+transform: rotate(0deg) skewX(-45deg);
+}
+.social2 ul li a:hover{
+transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+.social2 ul li:hover .fa{
+color: #fff;
+}
+.social2 ul li a:hover{
+transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+.social2 ul li:hover:nth-child(1) a{
+background: #3b5999;
+}
+
+.social2 ul li:hover:nth-child(1) a:before{
+background: #2e4a86;
+}
+.social2 ul li:hover:nth-child(1) a:after{
+background: #4a69ad;
+}
+.social2 ul li:hover:nth-child(2) a{
+background: #dd4b39;
+}
+.social2 ul li:hover:nth-child(2) a:before{
+background: #c13929;
+}
+.social2 ul li:hover:nth-child(2) a:after{
+background: #e83322;
+}
+.social2 ul li:hover:nth-child(3) a{
+background: #dd4b39;
+}
+
+.social2 ul li:hover:nth-child(3) a:before{
+background: #c13929;
+}
+.social2 ul li:hover:nth-child(3) a:after{
+background: #e83322;
+}
+
+.social2 ul li:hover:nth-child(4) a{
+background: #0077B5;
+}
+
+.social2 ul li:hover:nth-child(4) a:before{
+background: #036aa0;
+}
+.social2 ul li:hover:nth-child(4) a:after{
+background: #0d82bf;
+}
+
+.social2 ul li:hover:nth-child(5) a{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+
+.social2 ul li:hover:nth-child(5) a:before{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+.social2 ul li:hover:nth-child(5) a:after{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+/*scrolll*/
+.scrollbar{
+	height: 612px;
+	overflow-y: scroll;
+}
+
+.scrollbar::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	border-radius: 10px;
+	background-color: #444444;
+}
+
+.scrollbar::-webkit-scrollbar{
+	width: 1%;
+	min-width: 5px;
+	background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #D62929;
+	background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
+}
+
+
+
+/*end scroll*/
+/*name smoke*/
+/*.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  color: white;
+  list-style: none;
+  font-size: 6em;
+  letter-spacing: 10px;
+  font-weight: bold;
+  text-shadow: 1px 15px 16px #00000042;
+  -webkit-text-stroke: 1px #000000;
+}
+ul li:nth-child(1) {
+  color: #ff337f;
+}
+
+ul li:nth-child(2) {
+  color: #fc49fe;
+}
+
+ul li:nth-child(3) {
+  color: #ff6eff;
+}
+
+ul li:nth-child(4) {
+  color: #c07dfe;
+}
+
+ul li:nth-child(5) {
+  color: #04aeff;
+}
+ul li:nth-child(6) {
+  color:#ff337f;
+}
+ul li:nth-child(7) {
+  color: #ff6eff;
+}
+ul li:nth-child(8) {
+  color: #04aeff;
+}
+
+ul:hover li {
+  animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1;
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(20px);
+    color: white;
+  }
+}
+
+ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+ul li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+ul li:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+ul li:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+ul li:nth-child(5) {
+  animation-delay: 1.6s;
+}
+ul li:nth-child(6) {
+  animation-delay: 2.0s;
+}
+ul li:nth-child(7) {
+  animation-delay: 2.4s;
+}
+ul li:nth-child(8) {
+  animation-delay: 2.8s;
+}*/
+
+
+
+
+
+/*end smoke*/
+/*smoke*/
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: left bottom;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+
+#start {
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  margin-top: 260px;
+  width: 100%;
+}
+
+.blink_me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+
+
+#wrap {
+  margin: 0 auto;
+  width: 100%;
+  position: relative
+}
+
+#viewport {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+/*#viewport .smoke {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: url('https://res.cloudinary.com/da51wkm4r/image/upload/v1461143297/title/smoke.png') no-repeat;
+  bottom: 150px;
+  margin-left: 0px
+}*/
+
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: left bottom;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+
+/* exp bars */
+
+.exp {
+    height: 1.6em;
+    margin: 10px 2px;    
+    overflow: hidden;
+    background-color: #006064;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.exp {
+    background-image: -webkit-gradient(linear, left 0, left 100%, from(#00695c), to(#006064));
+    background-image: -webkit-linear-gradient(top, #00695c 0, #006064 100%);
+    background-image: -moz-linear-gradient(top, #00695c 0, #006064 100%);
+    background-image: linear-gradient(to bottom, #00695c 0, #006064 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00695c', endColorstr='#fff5f5f5', GradientType=0);
+}
+
+.exp {
+    height: 1.6em;
+    background-color: #006064;
+    background-image: none;
+    box-shadow: none;
+}
+
+.exp-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+/*     font-size: 14px;
+    line-height: 20px; */
+  padding-left:10px;
+    color: #fff;
+    background-color: #428bca;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.exp-bar {
+    background-image: -webkit-gradient(linear, left 0, left 100%, from(#428bca), to(#3071a9));
+    background-image: -webkit-linear-gradient(top, #428bca 0, #3071a9 100%);
+    background-image: -moz-linear-gradient(top, #428bca 0, #3071a9 100%);
+    background-image: linear-gradient(to bottom, #428bca 0, #3071a9 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3071a9', GradientType=0);
+}
+.exp-bar {
+    box-shadow: none;
+    background-color: #009688;
+    background-image: none;
+    -webkit-transition: all 2000ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -moz-transition: all 2000ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -ms-transition: all 2000ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -o-transition: all 2000ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition: all 2000ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -webkit-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -moz-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -ms-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -o-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+.exp-bar-warning {
+    background-image: -webkit-gradient(linear, left 0, left 100%, from(#f0ad4e), to(#ec971f));
+    background-image: -webkit-linear-gradient(top, #f0ad4e 0, #ec971f 100%);
+    background-image: -moz-linear-gradient(top, #f0ad4e 0, #ec971f 100%);
+    background-image: linear-gradient(to bottom, #f0ad4e 0, #ec971f 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffec971f', GradientType=0);
+}
+.exp-bar-warning {
+    background-color: #009688;
+    background-image: none;
+/*     font-size: 14px; */
+/*     line-height: 20px; */
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+body {
+  color: rgba(255,255,255,0.7);
+  font: 1.2em/1.7 "Roboto","Open Sans", sans-serif;
+  background: #090909;
+}
+
+main{
+  margin: 0 auto;
+  max-width: 31em;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+ h1, 
+ h2, 
+ h3 { color: rgba(255,255,255,0.90); }
+
+
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+a {color:#26A69A;}
+
+
+/*end smoke*/
